@@ -252,6 +252,8 @@ header {
 .programming_languages{
     overflow: auto;
     padding-bottom: 90px;
+    text-align: center;
+    margin: 100px;
 }
 
 .contact{
@@ -293,6 +295,13 @@ header {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+#midi{
+    margin-bottom: 150px;
+}
 
 
 .flexbox{
