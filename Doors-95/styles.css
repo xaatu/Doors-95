@@ -1,0 +1,342 @@
+/* GENERAL STYLE */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(87, 153, 181);
+    /* background-image: url('Images/desktop1.webp'); */
+    /* background-size: cover; */
+    font-family: "Ubuntu Mono", sans-serif;
+}
+.footer {
+    left: 0;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(200, 200, 200);
+    font-family: "Ubuntu Mono", sans-serif;
+    text-align: center; 
+    border-style: double;
+    border-width: 10px;
+}
+
+.footer img{
+    height: 60px;
+    width:auto;
+
+    position: absolute;
+    left: 2px;
+}
+
+#footText {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    
+}
+
+#footText:hover{
+    /* RAINBOW ANIMATE */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 100%;
+    animation: gradientAnimation 2s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#doors{
+    margin: 10px;
+}
+
+#start{
+    position: fixed;
+    margin-left: 10px;
+}
+
+
+#start:hover{
+    transform: scale(1.1);
+}
+
+.popup {
+    height: 200px;
+    width: 125px;
+    text-align: center;
+    border-style: double;
+    border-width: 10px;
+    background-color: #ffffff;
+    position: fixed; 
+    bottom: 80px; 
+    left: 4px; 
+    z-index: 1000; 
+}
+
+
+
+
+
+header {
+    left: 0;
+    position: fixed;
+    padding: 5px;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    border-radius: 0%;
+    border-style:double;
+    border-width: 5px;
+    background-color: rgb(200, 200, 200); /* Grey background color */
+    font-family: "Ubuntu Mono", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 1000;
+    
+}
+.close:hover img{
+    transform: scale(1.1);
+}
+
+.home:hover img{
+    transform:scale(1.1);
+}
+
+
+
+    
+
+/* DESKTOP GRID LAYOUT */
+.desktop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+    grid-gap: 20px;
+    padding: 20px;
+    position: relative; 
+}
+
+/* ICON STYLES */
+.icon {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 20%;
+    left: 10%
+}
+/* ICON HIGHLIGHT (click) */
+.highlighted{
+    background-color: rgb(175, 210, 210);
+    padding: 10px;
+    border-style: double;
+    border-width: 5px;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon:hover img {
+    transform: scale(1.1); 
+}
+
+.icon span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+/* ICON2 STYLES */
+.icon2 {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+    left: 10%
+    transition; transform: 0.5s; 
+}
+/* ADD KEYPAD FUNCTIONALITY SO ARROWKEYS CAN MOVE HIGHLIGHT AND COUNT AS FIRST CLICK */
+.highlighted{
+    background-color: rgb(175, 210, 210);
+}
+
+#warning.highlighted{
+    background-color: #ff0000;
+}
+.icon2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon2:hover img {
+    transform: scale(1.1); 
+}
+
+.icon2 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.trash {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+}
+.trash img{
+    width: 100px;
+    height: 100px;
+
+}
+.trash span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.trash:hover img{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.the_trash_bin{
+    text-align: center;
+    padding-top: 200px;
+}
+.the_trash_bin img{
+    height: 400px
+}
+
+/* PAGE ICONS */
+.page_icon {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+}
+
+.page_icon img{
+    width: 100px;
+    height: 100px;
+    right: 50%;
+}
+
+
+.cv_file{
+    position: absolute; 
+    top: 240px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center;
+    border-style: double;
+    border-width: 5px;
+    overflow: auto;
+    padding-bottom: 90px;
+    
+}
+.cv_file img{
+    height: 1200px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.programming_languages{
+    overflow: auto;
+    padding-bottom: 90px;
+}
+
+.contact{
+    padding-bottom: 90px;
+    padding-top: 100px;
+    text-align: center;
+    overflow:auto
+}
+#warning{
+    position:static;
+    text-align: center;
+    padding: 120px;
+}
+
+.hired{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    
+}
+
+.hired img{
+    height: 600px;
+}
+
+.flexbox{
+    background-color: white;
+    margin: 20px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-head{
+    align-self: center; /* VERTICAL */
+    border-style: dotted;
+    border-width: 5px;
+
+}
+
+.flex-img{
+    align-self: flex-end; 
+    height: 200px;
+    border-style: dotted;
+    border-width: 5px;
+}
+
+.flex-p{
+    align-self: center; 
+    border-style: double;
+    border-width: 5px;
+}
+
+
+
+/* (TO DO) MAKE CLOCK LOOK MORE WINDOWS 98 */
+#clock {
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    padding: 10px;
+    background-color: rgb(200, 200, 200);
+    border: 5px solid #000000;
+    border-radius: 2px;
+    border-style: double;
+    font-family: "Ubuntu Mono";
+}
+
+
+/* MEDIA QUERY FOR PHONE OR SMALL SCREEEN */
+@media only screen and (max-width: 600px) {
+    footer {
+        display: none;
+    }
+    .trash{
+        display: none;
+    }
+}
+
+/* ANIMATION FOR FOOTER TEXT */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
