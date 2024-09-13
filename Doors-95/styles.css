@@ -277,6 +277,23 @@ header {
     height: 600px;
 }
 
+.music{
+    margin-top: 120px;
+    text-align: center;
+}
+
+
+
+.python{
+    text-align: center;
+}
+.python img{
+    width: 500px;
+    height: auto;
+}
+
+
+
 .flexbox{
     background-color: white;
     margin: 20px;
