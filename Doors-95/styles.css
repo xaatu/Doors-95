@@ -70,13 +70,12 @@ body, html {
     text-align: center;
     border-style: double;
     border-width: 10px;
-    background-color: #ffffff;
+    background-color: rgb(200, 200,200);
     position: fixed; 
     bottom: 80px; 
     left: 4px; 
-    z-index: 1000; 
+    z-index: 1000;
 }
-
 
 
 
@@ -215,6 +214,10 @@ header {
 .the_trash_bin img{
     height: 400px
 }
+
+
+
+
 
 /* PAGE ICONS */
 .page_icon {
