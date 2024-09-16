@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/face.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Games</h1>
+    
+        <div class="close" style="position: fixed; top: 10px; right: 0;">
+            <a href="index.html"><img src="Images/close.png" alt="Close" height="50px" width="50px"></a>
+            <scan style="display: block; text-align: center;">Close</scan>
+        </div>
+        <div class="home" style="position: fixed; top: 10px; left: 10px;">
+            <a href="index.html"><img src="Images/home.png" alt="Home" height="50px" width="auto"></a>
+            <scan style="display: block; text-align: center;">Home</scan>
+        </div>
+
+    </header> 
+
+    <div class="page_icon">
+        <img src="Images/games.png" alt="Games">
+    </div>
+
+        <div class="music">
+        
+            <p>
+
+            </p>
+            <h3>I have dipped my feet into game design within Python, firstly just using scripts and running them in Terminal, and then using the PyGame library - following guides and trying to customise levels and assets.
+            </h3>
+        </div>
+        <div class="python">
+            <h4><u>Number Guessing Game</u></h4>
+            <p>Below is a number guessing game, running in Terminal. It starts by defining a random_number, I set this to random.randint(1, 100), but it could be any number.</p>
+            <p>The user then inputs a number, and the script prints higher, or lower - depending on the relation of user_number and random_number.</p>
+            <p>I would really like to try a Wordle-like game using the same principles, but would have to import a dictionary library, or link a text file with suitable-length words.</p>
+            <img src="Images/guess.png" alt="Guess">
+            <h4><u>Missy Munch</u></h4>
+            <p>Below is a video of my game, "Missy Munch". Named after one of my cats, I made this game following a PyGame guide on YouTube, designed to help viewers build a game in the style of "Copter".</p>
+            <p>Using the steps from the video, I created the basic landscape and then customised elements, which led to me designing the pixel art and music, then spending a long time learning how to animate images and import music within VS Code.</p>
+            <video class="video" controls>
+                <source src="Images/missymunch.mp4" type="video/mp4">
+            </video>
+            <h4><u>Ninja Peeps</u></h4>
+            <p>Finally, here is a video of the hardest game I have worked on to date, Ninja Peeps. Named after my other cat, this game really stretched my knowledge (and patience...)</p>
+            <p>Building on what I learned from Missy Munch, I wanted to make a platformer that features my other cat "Peeps". This was a lot harder and most of the information I was looking for was not in the YouTube videos I was watching as guides, which led to me downloading a few other platformer games on Github and testing some of their features.</p>
+            <p>The plan was to start with my basic knowledge (and YouTube) on level 1, and then improve the game every level - however the problem with this, as I learned by level 3, was that by storing all of the levels within one file, it becomes a nightmare to find your way around. Also rules that you made for the first level will impact future levels unless properly defined every time, in future if I tried this again I would separate levels into different files, so any functions could be more specified.</p>
+            <p>Unlike Missy Munch, which has no pre-determined end, this game crashes after level 3, as I set it to go to level_four, but never actually defined it.</p>
+            <video class="video" controls>
+                <source src="Images/ninjapeeps.mp4" type="video/mp4">
+            </video>
+
+
+
+        </div>
+
+        
+
+        <div class="page_icon" id="bottom">
+            <img src="Images/joystick.png" alt="joystick">
+        </div>
+        
+
+
+
+    <footer>
+        <div class="footer">
+            <img class="start" src="Images/start.png" id="start" alt="Start">
+            <!-- <img src="Images/popup.png" id="popup" alt="Popup"> -->
+    
+            <h1 class="footText" id="footText">Sandy's Desktop</h1>
+            <scan class="footText" id="doors"><i>Doors '95</i></scan>
+            <div id="clock"></div>
+        </div>
+    
+        
+    
+    
+    
+    </footer>
+
+
+
+<!-- JAVASCRIPT -->
+<script src="scripts.js"></script>
+
+</body>
+</html>

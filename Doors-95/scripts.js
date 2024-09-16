@@ -81,3 +81,17 @@ startElement.addEventListener('mouseover', function() {
         popup.remove();
     });
 });
+
+// NIGHT MODE
+    const nightModeIcon = document.getElementById('night');
+
+
+    nightModeIcon.addEventListener('click', function() {
+
+        document.body.classList.toggle('night-mode');
+
+        
+
+    });
+
+
