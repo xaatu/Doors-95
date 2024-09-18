@@ -300,6 +300,10 @@ header {
     text-align: center;
 }
 
+.python img{
+    width: 70%;
+}
+
 #bottom{
     padding: 100px;
 }
