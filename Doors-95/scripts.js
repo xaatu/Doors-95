@@ -55,8 +55,10 @@ setupHighlightInteractions('.icon');
 setupHighlightInteractions('.icon2');
 setupHighlightInteractions('.trash');
 
-// CLOCK SCRIPT (THIS WAS WHERE I FIRST LEARNED ABOUT DOMS, UNTIL THEN I HAD BEEN USING METHODS BUT 
-// AFTER SEARCHING ON REDDIT FOR WHY THE CLOCK WASN'T WORKING I REALISED I'D BEEN MANIPULATING DOM)
+
+
+
+// CLOCK
 document.addEventListener('DOMContentLoaded', function() {
     function updateClock() {
         const now = new Date();
@@ -69,6 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {
     updateClock();
     setInterval(updateClock, 1000);
 });
+
+
+
 
 // START POPUP
 const startElement = document.querySelector('.start');
@@ -83,6 +88,8 @@ startElement.addEventListener('mouseover', function() {
         popup.remove();
     });
 });
+
+
 
 // NIGHT MODE
     const nightModeIcon = document.getElementById('night');
