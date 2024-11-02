@@ -88,7 +88,6 @@ body, html {
 
 
 
-
 header {
     left: 0;
     position: fixed;
@@ -285,10 +284,8 @@ header {
 }
 
 .websites p, .websites h2{
-    width: 50%;
-    text-align: center;
-    display: block;
-    padding: 35px;
+    width: 100%;
+    text-align: left;
 }
 
 
