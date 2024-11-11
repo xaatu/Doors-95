@@ -33,39 +33,79 @@
     <div class="page_icon">
         <img src="Images/games.png" alt="Games">
     </div>
-
-        <div class="music">
-        
-            <p>
-
-            </p>
-            <h3>I have dipped my feet into game design within Python, firstly just using scripts and running them in Terminal, and then using the PyGame library - following guides and trying to customise levels and assets.
-            </h3>
-        </div>
-        <div class="python">
-            <h4><u>Number Guessing Game</u></h4>
-            <p>Below is a number guessing game, running in Terminal. It starts by defining a random_number, I set this to random.randint(1, 100), but it could be any number.</p>
-            <p>The user then inputs a number, and the script prints higher, or lower - depending on the relation of user_number and random_number.</p>
-            <p>I would really like to try a Wordle-like game using the same principles, but would have to import a dictionary library, or link a text file with suitable-length words.</p>
-            <img src="Images/guess.png" alt="Guess">
-            <h4><u>Missy Munch</u></h4>
-            <p>Below is a video of my game, "Missy Munch". Named after one of my cats, I made this game following a PyGame guide on YouTube, designed to help viewers build a game in the style of "Copter".</p>
-            <p>Using the steps from the video, I created the basic landscape and then customised elements, which led to me designing the pixel art and music, then spending a long time learning how to animate images and import music within VS Code.</p>
-            <video class="video" controls>
-                <source src="Images/missymunch.mp4" type="video/mp4">
-            </video>
-            <h4><u>Ninja Peeps</u></h4>
-            <p>Finally, here is a video of the hardest game I have worked on to date, Ninja Peeps. Named after my other cat, this game really stretched my knowledge (and patience...)</p>
-            <p>Building on what I learned from Missy Munch, I wanted to make a platformer that features my other cat "Peeps". This was a lot harder and most of the information I was looking for was not in the YouTube videos I was watching as guides, which led to me downloading a few other platformer games on Github and testing some of their features.</p>
-            <p>The plan was to start with my basic knowledge (and YouTube) on level 1, and then improve the game every level - however the problem with this, as I learned by level 3, was that by storing all of the levels within one file, it becomes a nightmare to find your way around. Also rules that you made for the first level will impact future levels unless properly defined every time, in future if I tried this again I would separate levels into different files, so any functions could be more specified.</p>
-            <p>Unlike Missy Munch, which has no pre-determined end, this game crashes after level 3, as I set it to go to level_four, but never actually defined it.</p>
-            <video class="video" controls>
-                <source src="Images/ninjapeeps.mp4" type="video/mp4">
-            </video>
+    <h3 class="music">I have dipped my feet into game design within Python, firstly just using scripts and running them in Terminal, and then using the PyGame library - following guides and trying to customise levels and assets.
+    </h3>
+</div>
 
 
+            <div class="games">
+                <img src="Images/guess.png" alt="Number Guessing Game">
+                <h2>Number Guessing Game</h2>
+                <p>Displayed to the left is a number guessing game script running in Terminal. It starts by defining a random_number, I set this to random.randint(1, 100), but it could be any number.
+                    <br>
+                    <br>
+                    The user then inputs a number, and the script prints higher, or lower - depending on the relation of user_number and random_number.
+                    <br>
+                    <br>
+            I would really like to try a Wordle-like game using the same principles, but would have to import a dictionary library, or link a text file with suitable-length words.</p>
+            </div>
 
-        </div>
+            <div class="games">
+                <video class="video" controls>
+                    <source src="Images/missymunch.mp4" type="video/mp4">
+                </video>
+                <h2>Missy Munch</h2>
+                <a href="https://github.com/xaatu/missy-munch" target="_blank" id="github">GitHub</a>
+                <p>This video is of my game, "Missy Munch", named after one of my cats.
+                    <br>
+                    <br>
+                    I made this game following a <b>PyGame</b> guide on <b>YouTube</b>, designed to help viewers build a game in the style of <b>"Copter"</b> or <b>"Flappy Bird"</b>.
+                    <br>
+                    <br>
+            Using the steps from the video, I created the basic landscape and then customised elements, which led to me designing the <b>pixel art</b> and <b>music</b>, then spending a long time learning how to <b>animate</b> images and <b>import</b> music within VS Code.</p>
+            </div>
+
+
+            <div class="games">
+                <video class="video" controls>
+                    <source src="Images/ninjapeeps.mp4" type="video/mp4">
+                </video>
+                <h2>Ninja Peeps</h2>
+                <a href="https://github.com/xaatu/ninja-peeps" target="_blank" id="github">GitHub</a>
+                <p>Here is a video of the hardest game I have worked on to date, Ninja Peeps. Named after my other cat, this game really stretched my knowledge (and patience...)
+                    <br>
+                    <br>
+            Building on what I learned from Missy Munch, I wanted to make a <b>platformer</b> that features my other cat "Peeps". This was a lot harder and most of the information I was looking for was not in the <b>YouTube</b> videos I was watching as <b>guides</b>, which led to me downloading a few other platformer games on <b>Github</b> and <b>testing</b> some of their <b>features</b>.
+            <br>
+            <br>
+            The plan was to start with my basic knowledge (and YouTube) on level 1, and then improve the game every level - however the problem with this, as I learned by level 3, was that by storing all of the levels within one file, it becomes difficult to find your way around. Also rules that you made for the first level will impact future levels unless properly defined every time, in future if I tried this again I would separate levels into different files, so any <b>functions</b> could be more specified.
+            <br>
+                    <br>
+            Unlike Missy Munch, which has no pre-determined end, this game crashes after level 3, as I set it to go to level_four, but never actually defined it.</p>
+            </div>
+
+
+            <div class="games">
+                <img src="Images/pub_quiz.png" alt="Pub Quiz">
+            
+                <h2>Pub Quiz</h2>
+                <a href="https://github.com/xaatu/python_quiz" target="_blank" id="github">GitHub</a>
+                <p>After using TkInter in my calculator, I felt I had enough experience to try creating a quiz in the style of a Pub Quiz machine (hence the egregiously tacky font...)
+                    <br>
+                    <br>
+            Building on one of our tasks during the Python section of the JustIT course, I decided to take the Python Quiz and add a few extra layers.
+            <br>
+            <br>
+            This included a GUI to make it look more presentable, and an external dictionary function from which to load the questions and answers.
+            <br>
+            <br>
+            I then used Pyinstaller to package the contents into both Mac and Windows friendly versions, so they could be opened like an app.
+            </div>
+
+            
+
+
+
 
         
 

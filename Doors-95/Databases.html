@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Records</title>
+    <title>Databases</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Images/face.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <h1>Country Records</h1>
+        <h1>Databases</h1>
     
         <div class="close" style="position: fixed; top: 10px; right: 0;">
             <a href="index.html"><img src="Images/close.png" alt="Close" height="50px" width="50px"></a>
@@ -30,24 +30,53 @@
 
     </header> 
 
-    <div class="page_icon">
-        <img src="Images/database.png" alt="Websites">
+    <div class="page_icon" id="top">
+        <img src="Images/database.png" alt="database">
     </div>
 
-    <div class="database">
-        <ul>
-            {% if data %}
-                {% for row in data %}
-                    <li>{{ row[0] }} - {{ row[1] }}</li>
-                {% endfor %}
-            {% else %}
-                <li>No data available.</li>
-            {% endif %}
-        </ul>
+    <div class="databases">
+        <img src="Images/databaseERD.png" alt="ERD">
+        <h2>Entity Relationship Diagram</h2>
+        <p>I designed this <b>ERD</b> to plan out a <b>database</b> on the subject of Old School Runescape <b>NPCs</b> and <b>Items</b>, linked by <b>Location</b>. Given that the game 
+            has over 10,000 items and probably another thousand or more NPCs, my aim was not to fill the whole database, but more to give an <b>example</b> 
+            and show how data could be retrieved and added.
+            <br>
+            <br>
+            <br>
+            While I had worked on databases before in a module at university, this was my first chance to create one <b>from scratch</b>, and I think
+            being given the freedom to choose subject matter and source the data myself helped me grasp the concepts more clearly.
+        
+        </p>
     </div>
+
+    <div class="databases">
+        <img src="Images/database1.png" alt="Items">
+        <h2>Items Table</h2>
+        <p>The Items table features <b>118</b> items, labelled with <b>Item_ID</b>, <b>Name</b>, <b>Description</b>, <b>Category_ID</b>, <b>Location_ID</b>, <b>Value</b>, <b>Weight</b>, <b>Rarity</b>, and <b>Level_Required</b>.
+            <br>
+            <br>
+            <br>
+            Lower level items which were able to be sourced from locations rather than NPCs had specific <b>Location_ID</b>, whereas higher level items such as the ones shown in the screenshot, could have an <b>NPC_ID</b> column attached in future.
+        
+        </p>
+    </div>
+
+    <div class="databases">
+        <img src="Images/database3.png" alt="NPCs">
+        <h2>NPC Table</h2>
+        <p>The NPC table features <b>14</b> NPCs, labelled with <b>ID</b>, <b>Name</b>, <b>Description</b>, <b>Level</b>, <b>Location_ID</b>, <b>Is_Hostile</b>, <b>Weight</b>, and <b>NPC_Category</b>.
+            <br>
+            <br>
+            <br>
+                The Is_Hostile column allowed me to use a Boolean value for the first time. I feel like this whole process gave me a better idea of how
+                I may implement a database in future, perhaps in a game where items can be upgraded and NPCs can be interacted with.
+        </p>
+    </div>
+
+    
 
     <div class="page_icon" id="bottom">
-        <img src="Images/database2.png" alt="Website2">
+        <img src="Images/database2.png" alt="database2">
     </div>
         
 

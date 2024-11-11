@@ -118,7 +118,10 @@ header {
     transform:scale(1.1);
 }
 
-    
+#titlespiel{
+    text-align: center;
+    margin-top: 150px;
+}
 
 /* DESKTOP GRID LAYOUT */
 .desktop {
@@ -261,12 +264,7 @@ header {
     margin: 0 auto; 
 }
 
-.programming_languages{
-    overflow: auto;
-    padding-bottom: 90px;
-    text-align: center;
-    margin: 100px;
-}
+
 
 .websites{
     display: flex;
@@ -283,11 +281,97 @@ header {
     margin-right: 20px;
 }
 
-.websites p, .websites h2{
+.websites p, .websites h2, .websites a{
     width: 100%;
     text-align: left;
 }
 
+.databases{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 150px ;
+}
+
+.databases img{
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.databases p, .databases h2{
+    width: 100%;
+    text-align: left;
+}
+
+.games{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 150px ;
+}
+
+.games img{
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.games video{
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.games p, .games h2, .games a{
+    width: 100%;
+    text-align: left;
+}
+
+.python{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 150px ;
+}
+
+.python img{
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.python p, .python h2, .python a{
+    width: 100%;
+    text-align: left;
+}
+
+.programming_languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 150px ;
+}
+
+.programming_languages img{
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.programming_languages p, .programming_languages h2, .programming_languages a{
+    width: 100%;
+    text-align: left;
+    margin-left: 100px;
+}
 
 .contact{
     padding-bottom: 90px;
@@ -318,15 +402,6 @@ header {
 }
 
 
-
-.python {
-    margin: 50px;
-    text-align: center;
-}
-
-.python img{
-    width: 70%;
-}
 
 #bottom{
     padding: 100px;
