@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS Apps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/face.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>IOS Apps</h1>
+    
+        <div class="close" style="position: fixed; top: 10px; right: 0;">
+            <a href="index.html"><img src="Images/close.png" alt="Close" height="50px" width="50px"></a>
+            <scan style="display: block; text-align: center;">Close</scan>
+        </div>
+        <div class="back" style="position: fixed; top: 10px; right: 70px;">
+            <a href="portfolio.html"><img src="Images/back.png" alt="Back" height="50px" width="50px"></a>
+            <scan style="display: block; text-align: center;">Back</scan>
+        </div>
+        <div class="home" style="position: fixed; top: 10px; left: 10px;">
+            <a href="index.html"><img src="Images/home.png" alt="Home" height="50px" width="auto"></a>
+            <scan style="display: block; text-align: center;">Home</scan>
+        </div>
+
+    </header> 
+
+    <div class="page_icon">
+        <img src="Images/apps.png" alt="Apps">
+    </div>
+    <h3 class="music">This is my first attempt at using the Flutter framework to create an IOS app. Originally this came from a 6 hour task set by a potential employer, but after completion of the 6 hours, I decided to flesh it out more.
+    </h3>
+</div>
+
+
+            <div class="apps">
+                <img src="Images/home (1).png" alt="Home Screen">
+                <h2>"SHAPE Movies" Home Screen</h2>
+                <a href="https://github.com/xaatu/omdb_api_updated" target="_blank" id="github">GitHub</a>
+                <p> This is the home screen. It features a logo I designed, with a bold App Bar title and rounded button. 
+                    <br>
+                    <br>
+                    I designed the logo in GIMP. 
+                    <br>
+                    <br>
+                    The button directs the user to the "Movie Search" screen
+                    <br>
+                    <br>
+                    The app features navigation to and from each page, in the form of buttons.
+                    <br>
+                    <br>
+                    While the app will run on IOS and Mac, I have not yet fully tested it for android so I can't confirm.
+
+                    
+            </div>
+
+            <div class="apps">
+                <img src="Images/errorsearchscreen.png" alt="Search Screen">
+                <h2>"SHAPE Movies" Search Screen</h2>
+                <a href="https://github.com/xaatu/omdb_api_updated" target="_blank" id="github">GitHub</a>
+                <p> This is the Movie Search screen. It pulls data from the OMDB API and displays it in a column down the page. 
+                    <br>
+                    <br>
+                    The monochromatic design is consistent throughout the app, by using a theme.dart file to define theme data for the other files.
+                    <br>
+                    <br>
+                    I also added error handling, in the form of movie quotes. When a user tries to search for a term that brings up an error, they instead get "Houston, we have a problem" - Apollo 13 (1995), followed by the error message "Try searching for a different title!"
+            </div>
+
+            <div class="apps">
+                <img src="Images/moviedetails.png" alt="Details Screen">
+                <h2>"SHAPE Movies" Details Screen</h2>
+                <a href="https://github.com/xaatu/omdb_api_updated" target="_blank" id="github">GitHub</a>
+                <p> This is the Movie Details screen. It appears when the users clicks on a film, and displays the poster and film details in a full page. 
+                    <br>
+                    <br>
+                    The idea of this page was to eventually have a short plot of the film, and perhaps another data point pulled from the OMDB API.
+                    <br>
+                    <br>
+                    If there is no associated poster for the film, the default flutter "Film" icon will show, and similarly with other film details "N/A" will appear.
+            </div>
+
+            
+
+
+
+            
+
+
+
+
+        
+
+        <div class="page_icon" id="bottom">
+            <img src="Images/apps.png" alt="app">
+        </div>
+        
+
+
+
+    <footer>
+        <div class="footer">
+            <img class="start" src="Images/start.png" id="start" alt="Start">
+            <!-- <img src="Images/popup.png" id="popup" alt="Popup"> -->
+    
+            <h1 class="footText" id="footText">Sandy's Desktop</h1>
+            <scan class="footText" id="doors"><i>Doors '95</i></scan>
+            <div id="clock"></div>
+        </div>
+    
+        
+    
+    
+    
+    </footer>
+
+
+
+</body>
+</html>

@@ -352,6 +352,26 @@ header {
     text-align: left;
 }
 
+.apps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 150px ;
+}
+
+.apps img{
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.apps p, .apps h2, .apps a{
+    width: 100%;
+    text-align: left;
+}
+
 .programming_languages{
     display: flex;
     flex-direction: row;
